@@ -9,7 +9,7 @@ const Navbar = () => {
         <Link to="/">Main</Link>
         <Link to="/gallery">Gallery</Link>
         <Link to="/certificates">Certificates</Link>
-        <Button>Click me</Button>
+        <Button variant={"outline"}>Click me</Button>
       </div>
     </div>
   );
