@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const MainPage = () => {
+  //
   return (
     <div>
       <h1>MainPage</h1>
