@@ -3,10 +3,11 @@ import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element";
 import NavbarLink from "./NavbarLink";
 import NavbarLogoLink from "./NavbarLogoLink";
 import { GiHamburgerMenu } from "react-icons/gi";
+import NavbarMobileModal from "./NavbarMobileModal";
 
 const Navbar = () => {
   return (
-    <div className="fixed w-full z-50 bg-background rounded shadow-xl">
+    <div className="fixed w-full z-[49] bg-background rounded shadow-xl">
       <ScrollToHashElement behavior="smooth" inline="center" block="start" />
       <div className="xl:max-w-7xl mx-auto flex justify-between items-center p-3">
         <NavbarLogoLink />
@@ -26,6 +27,8 @@ const Navbar = () => {
 
         <div className="xl:hidden">
           <GiHamburgerMenu className="w-[40px] h-[40px] " />
+
+          <NavbarMobileModal />
         </div>
       </div>
     </div>
