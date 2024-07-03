@@ -1,17 +1,14 @@
-import logo from "../../assets/logo.svg";
 import phoneIcon from "../../assets/phone-icon.svg";
-import { Link } from "react-router-dom";
 import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element";
 import NavbarLink from "./NavbarLink";
+import NavbarLogoLink from "./NavbarLogoLink";
 
 const Navbar = () => {
   return (
     <div className="fixed w-full z-50 bg-background rounded shadow-xl">
       <ScrollToHashElement behavior="smooth" inline="center" block="start" />
       <div className="max-w-7xl mx-auto flex justify-between items-center p-3">
-        <Link to="/" className="text-foreground">
-          <img src={logo} alt="Logo" width="63" height="50" />
-        </Link>
+        <NavbarLogoLink />
 
         <menu className="flex gap-5 ">
           <NavbarLink path={"/#about"} text={"O nas"} />
