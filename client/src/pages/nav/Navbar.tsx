@@ -1,11 +1,16 @@
-import phoneIcon from "../../assets/phone-icon.svg";
+import { useState } from "react";
 import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element";
+
 import NavbarLink from "./NavbarLink";
-import NavbarLogoLink from "./NavbarLogoLink";
-import { GiHamburgerMenu } from "react-icons/gi";
 import NavbarMobileModal from "./NavbarMobileModal";
 
+import phoneIcon from "../../assets/phone-icon.svg";
+import NavbarLogoLink from "./NavbarLogoLink";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 const Navbar = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="fixed w-full z-[49] bg-background rounded shadow-xl">
       <ScrollToHashElement behavior="smooth" inline="center" block="start" />
@@ -26,9 +31,14 @@ const Navbar = () => {
         </div>
 
         <div className="xl:hidden">
-          <GiHamburgerMenu className="w-[40px] h-[40px] " />
+          <GiHamburgerMenu
+            className="w-[40px] h-[40px]"
+            onClick={() => {
+              setIsModalOpen(true);
+            }}
+          />
 
-          <NavbarMobileModal />
+          <NavbarMobileModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
         </div>
       </div>
     </div>
