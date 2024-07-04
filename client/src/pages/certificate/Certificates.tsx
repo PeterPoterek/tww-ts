@@ -1,6 +1,6 @@
 const Certificates = () => {
   return (
-    <div>
+    <div className="pt-[20rem]">
       <h1>Certificates</h1>
     </div>
   );
