@@ -17,7 +17,7 @@ const MainPage = () => {
                 remontowych już dziś.
               </p>
             </div>
-            <img src={landingPageImage} alt="" />
+            <img src={landingPageImage} alt="Icon of construction man" />
           </div>
 
           <Link to={"/#contact"}>
