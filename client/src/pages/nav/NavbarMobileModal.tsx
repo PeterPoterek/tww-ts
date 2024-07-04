@@ -15,10 +15,9 @@ const NavbarMobileModal = ({ isModalOpen, setIsModalOpen }: NavbarMobileModalPro
     visible: {
       x: "0%",
       transition: {
-        type: "spring",
-        damping: 20,
-        stiffness: 100,
-        duration: 0.5,
+        type: "tween",
+        ease: "easeInOut",
+        duration: 0.25,
       },
     },
   };
