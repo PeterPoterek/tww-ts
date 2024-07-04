@@ -29,6 +29,31 @@ const NavbarMobileModal = ({ isModalOpen, setIsModalOpen }: NavbarMobileModalPro
     }
   };
 
+  const handleSwipeGesture = (event: TouchEvent) => {
+    const touch = event.touches[0];
+    const startX = touch.clientX;
+    const threshold = window.innerWidth * 0.2;
+
+    document.addEventListener("touchend", onTouchEnd);
+
+    function onTouchMove(event: TouchEvent) {
+      const touch = event.touches[0];
+      const currentX = touch.clientX;
+      const deltaX = currentX - startX;
+
+      if (deltaX > threshold) {
+        setIsModalOpen(true);
+      }
+    }
+
+    function onTouchEnd() {
+      document.removeEventListener("touchmove", onTouchMove);
+      document.removeEventListener("touchend", onTouchEnd);
+    }
+
+    document.addEventListener("touchmove", onTouchMove);
+  };
+
   const modalVariants = {
     hidden: {
       x: "100%",
