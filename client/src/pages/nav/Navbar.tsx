@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full z-[49] bg-background rounded shadow-xl">
       <ScrollToHashElement behavior="smooth" inline="center" block="start" />
-      <div className="md  :max-w-7xl mx-auto flex justify-between items-center p-3">
+      <div className="md:max-w-7xl mx-auto flex justify-between items-center p-3">
         <NavbarLogoLink />
 
         <menu className="hidden md:flex gap-5 ">
