@@ -5,9 +5,9 @@ const MainPage = () => {
   return (
     <>
       <section className="pt-[6rem] md:pt-[8rem]">
-        <div className="flex flex-col gap-2 md:gap-5 justify-center items-center p-5">
+        <div className="flex flex-col gap-3 md:gap-5 justify-center items-center p-5">
           <h1 className="text-center text-4xl  md:text-4xl xl:text-5xl font-bold">Technologia Wykonania Wnętrz</h1>
-          <div className="flex flex-col text-center sm:text-left sm:flex-row justify-center items-center gap-5">
+          <div className="flex flex-col text-center sm:text-left sm:flex-row justify-center items-center gap-2 md:gap-5">
             <div className="md:max-w-[920px] flex flex-col gap-2 md:gap-4">
               <p className="font-bold text-sm md:text-xl xl:text-2xl">Profesjonalne remonty, doskonała jakość, zadowoleni klienci.</p>
               <p className="md:max-w-[596px] text-sm md:text-base">
@@ -27,7 +27,7 @@ const MainPage = () => {
           </Link>
         </div>
       </section>
-      <div className="flex flex-col gap-[100rem]">
+      {/* <div className="flex flex-col gap-[100rem]">
         <div id="about">
           <h2>About</h2>
         </div>
@@ -37,7 +37,7 @@ const MainPage = () => {
         <div id="contact">
           <h2>Contact</h2>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
