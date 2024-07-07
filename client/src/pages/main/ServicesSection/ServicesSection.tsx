@@ -23,10 +23,10 @@ const ServicesSection = () => {
   return (
     <section id="services" className="p-5 pt-10 pb-10">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col justify-center gap-3">
-          <h2 className="text-2xl md:text-2xl xl:text-3xl font-bold">Usługi</h2>
+        <div className="flex flex-col justify-center gap-5">
+          <h2 className="text-center text-2xl md:text-2xl xl:text-3xl font-bold">Usługi</h2>
 
-          <div className="flex gap-3 justify-between">
+          <div className="flex gap-5 justify-center flex-wrap lg:flex-nowrap">
             {servicesData.map((service) => (
               <ServicesList key={service.label} label={service.label} services={service.services} />
             ))}
