@@ -5,7 +5,7 @@ import ServicesList from "./ServicesList";
 const ServicesSection = () => {
   const servicesData = [
     {
-      label: "Remonty mieszkań i łazienek",
+      label: "Remonty mieszkań",
       icon: <MdHomeRepairService size={32} className="text-slate-200" />,
       services: ["Remonty mieszkań", "Remont łazienki", "Wykończenia łazienek"],
     },
