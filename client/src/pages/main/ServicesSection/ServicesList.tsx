@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 
 const ServicesList = ({ label, services }: ServicesListProps) => {
   return (
-    <div className="w-[220px] sm:w-[270px] h-[180px] flex flex-col bg-slate-900 p-5 rounded-md gap-2">
+    <div className="w-[220px] sm:w-[270px] h-[190px] flex flex-col bg-slate-900 p-5 rounded-md gap-2">
       <h3 className="text-slate-200  font-bold">{label}:</h3>
 
       <Separator />
