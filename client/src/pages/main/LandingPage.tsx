@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const LandingPage = () => {
   return (
     <section id="landing" className="pt-[2rem] md:pt-[4rem] max-w-6xl mx-auto h-screen flex">
-      <div className="flex flex-col gap-3 md:gap-5 justify-center items-center p-5">
+      <div className="flex flex-col gap-3 md:gap-5 justify-center items-center p-5 max-w-6xl mx-auto">
         <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold uppercase tracking-tighter	">Technologia Wykonania Wnętrz</h1>
         <div className="flex flex-col text-center sm:text-left sm:flex-row justify-center items-center gap-2 md:gap-5">
           <div className="md:max-w-[920px] flex flex-col gap-2 md:gap-4">

@@ -11,7 +11,7 @@ const CreationStepsSection = () => {
         <div className="flex flex-col justify-center gap-5">
           <h2 className="text-center  text-2xl md:text-2xl xl:text-3xl font-bold">ETAPY TWORZENIA</h2>
 
-          <div className="flex gap-[2rem] justify-center">
+          <div className="flex flex-col lg:flex-row gap-[2rem] justify-center items-center">
             <CreationStepsCard src={creation1} cardText="KONSULTACJA I PLANOWANIE" />
             <CreationStepsCard src={creation2} cardText="WYKONANIE PRAC REMONTOWYCH" />
             <CreationStepsCard src={creation3} cardText="ZAKOŃCZENIE I KONTROLA JAKOŚCI" />
