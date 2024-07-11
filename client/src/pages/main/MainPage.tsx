@@ -13,6 +13,9 @@ const MainPage = () => {
       <ServicesSection />
 
       <CreationStepsSection />
+
+      <section id="reviews">Reviews</section>
+      <section id="contact">Contact</section>
     </>
   );
 };

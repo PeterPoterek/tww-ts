@@ -7,13 +7,15 @@ import NavbarMobileModal from "./NavbarMobileModal";
 import phoneIcon from "../../assets/phone-icon.svg";
 import NavbarLogoLink from "./NavbarLogoLink";
 import { GiHamburgerMenu } from "react-icons/gi";
+import ScrollToAnchor from "./ScrollToAnchor";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="fixed w-full z-[49] bg-background rounded shadow-xl">
-      <ScrollToHashElement behavior="smooth" inline="center" block="start" />
+      {/* <ScrollToHashElement behavior="smooth" inline="center" block="start" /> */}
+      <ScrollToAnchor />
       <div className="md:max-w-7xl mx-auto flex justify-between items-center p-3">
         <NavbarLogoLink />
 
