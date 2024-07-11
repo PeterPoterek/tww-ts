@@ -60,4 +60,5 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-image: url("./assets/noise.svg");
 }
