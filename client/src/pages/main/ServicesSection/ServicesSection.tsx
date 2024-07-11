@@ -8,22 +8,22 @@ const ServicesSection = () => {
     {
       label: "Remonty mieszkań",
       icon: <MdHomeRepairService size={32} className="text-slate-200" />,
-      services: ["Remonty mieszkań", "Remont łazienki", "Wykończenia łazienek"],
+      services: ["Renowacje mieszkań", "Remont łazienki", "Remonty kuchni", "Wykończenia łazienek"],
     },
     {
       label: "Wykończenia wnętrz",
       icon: <FaPaintRoller size={32} className="text-slate-200" />,
-      services: ["Tapetowanie"],
+      services: ["Tapetowanie", "Malowanie ścian", "Układanie paneli podłogowych"],
     },
     {
       label: "Prace wykończeniowe",
       icon: <FaTools size={32} className="text-slate-200" />,
-      services: ["Glazurnik", "Płyta karton gips", "Malowanie mieszkań", "Malowanie biur"],
+      services: ["Układanie glazury", "Montaż płyt gipsowych", "Montaż sufitów podwieszanych"],
     },
     {
-      label: "Klimatyzacja i wentylacja",
+      label: "Instalacje klimatyzacyjne",
       icon: <MdOutlineAir size={32} className="text-slate-200" />,
-      services: ["Rekuperacja"],
+      services: ["Rekuperacja", "Montaż klimatyzacji"],
     },
   ];
 

@@ -1,16 +1,17 @@
+import { Separator } from "@/components/ui/separator";
+
 interface ServicesListProps {
   label: string;
   services: string[];
   icon: JSX.Element;
 }
-import { Separator } from "@/components/ui/separator";
 
 const ServicesList = ({ label, services, icon }: ServicesListProps) => {
   return (
-    <div className="sm:w-[320px] w-[220px] h-[220px] flex flex-col bg-slate-900 p-5 rounded-md gap-2">
-      <div className="flex gap-1 justify-center items-center p-1">
+    <div className="sm:w-[320px] w-[220px] h-[220px] flex flex-col bg-slate-900 p-3 rounded-md gap-2">
+      <div className="flex gap-3 justify-center items-center p-1">
         {icon}
-        <h3 className="text-slate-200  font-bold">{label}:</h3>
+        <h3 className="text-slate-200  font-bold">{label}</h3>
       </div>
 
       <Separator />
