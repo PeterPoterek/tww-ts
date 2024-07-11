@@ -12,7 +12,7 @@ const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="fixed w-full z-[49] rounded shadow-xl bg-neutral-100 opacity-95">
+    <div className="fixed w-full z-[49] rounded shadow-xl bg-neutral-100 opacity-100 lg:opacity-95">
       <ScrollToAnchor />
       <div className="md:max-w-7xl mx-auto flex justify-between items-center p-3">
         <NavbarLogoLink />
