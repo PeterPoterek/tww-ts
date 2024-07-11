@@ -4,6 +4,7 @@ import CreationStepsSection from "./CreationStepsSection/CreationStepsSection";
 import LandingPage from "./LandingPage";
 import ReviewsSection from "./ReviewsSection/ReviewsSection";
 import ServicesSection from "./ServicesSection/ServicesSection";
+import SliderSection from "./SliderSection/SliderSection";
 
 const MainPage = () => {
   return (
@@ -15,6 +16,8 @@ const MainPage = () => {
       <ServicesSection />
 
       <CreationStepsSection />
+
+      <SliderSection />
 
       <ReviewsSection />
 

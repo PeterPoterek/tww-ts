@@ -16,6 +16,10 @@ const CreationStepsSection = () => {
           <CreationStepsCard src={creation2} cardText="WYKONANIE PRAC REMONTOWYCH" />
           <CreationStepsCard src={creation3} cardText="ZAKOŃCZENIE I KONTROLA JAKOŚCI" />
         </div>
+        <p className="text-base md:text-lg max-w-[700px] m-auto text-center">
+          Każdy remont jest unikalny i dopasowany do specyficznych potrzeb klienta oraz zakresu prac. Nasza firma dba o to, by dostosować się do
+          Twoich wymagań i zapewnić pełną obsługę na każdym etapie remontu.
+        </p>
       </div>
     </Section>
   );
