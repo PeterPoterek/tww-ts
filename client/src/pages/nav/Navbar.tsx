@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element";
 
 import NavbarLink from "./NavbarLink";
 import NavbarMobileModal from "./NavbarMobileModal";
@@ -13,8 +12,7 @@ const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="fixed w-full z-[49] bg-background rounded shadow-xl">
-      {/* <ScrollToHashElement behavior="smooth" inline="center" block="start" /> */}
+    <div className="fixed w-full z-[49] rounded shadow-xl bg-neutral-50">
       <ScrollToAnchor />
       <div className="md:max-w-7xl mx-auto flex justify-between items-center p-3">
         <NavbarLogoLink />
