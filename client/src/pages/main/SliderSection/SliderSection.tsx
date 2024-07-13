@@ -34,7 +34,6 @@ const SliderSection = () => {
     ],
   };
 
-  //
   return (
     <div className="slider-container cursor-pointer" onClick={() => navigate("/gallery")}>
       <Slider {...settings}>
