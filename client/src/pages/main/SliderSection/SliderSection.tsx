@@ -35,7 +35,7 @@ const SliderSection = () => {
   };
 
   return (
-    <div className="slider-container cursor-pointer" onClick={() => navigate("/gallery")}>
+    <div className="hidden sm:block slider-container cursor-pointer" onClick={() => navigate("/gallery")}>
       <Slider {...settings}>
         <div className="slick-slide">
           <img src={gallery1} alt="" />
