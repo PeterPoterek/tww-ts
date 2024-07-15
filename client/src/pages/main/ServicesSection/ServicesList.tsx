@@ -18,7 +18,11 @@ const ServicesList = ({ label, services, icon }: ServicesListProps) => {
 
       <ul className="flex flex-col gap-1">
         {services.map((service) => {
-          return <li className="text-slate-200 ">- {service}</li>;
+          return (
+            <li key={service} className="text-slate-200 ">
+              - {service}
+            </li>
+          );
         })}
       </ul>
     </div>
