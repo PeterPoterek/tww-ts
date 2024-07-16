@@ -15,7 +15,6 @@ const ServicesList = ({ label, services, icon }: ServicesListProps) => {
       </div>
 
       <Separator />
-
       <ul className="flex flex-col gap-1">
         {services.map((service) => {
           return (
