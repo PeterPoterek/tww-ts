@@ -25,7 +25,7 @@ const ReviewsSection = () => {
     <Section id="reviews">
       <h2 className="text-center  text-2xl md:text-2xl xl:text-3xl font-bold">Opinie</h2>
 
-      <div>
+      <div className="">
         {reviewsData.map((review) => (
           <ReviewsSectionReview name={review.name} starsCount={review.starCout} description={review.description} />
         ))}
