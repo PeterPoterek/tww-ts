@@ -27,7 +27,7 @@ const ReviewsSection = () => {
 
       <div className="">
         {reviewsData.map((review) => (
-          <ReviewsSectionReview name={review.name} starsCount={review.starCout} description={review.description} />
+          <ReviewsSectionReview key={review.name} name={review.name} starsCount={review.starCout} description={review.description} />
         ))}
       </div>
     </Section>
