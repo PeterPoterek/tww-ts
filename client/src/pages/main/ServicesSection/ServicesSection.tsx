@@ -27,7 +27,7 @@ const ServicesSection = () => {
       <div className="flex flex-col justify-center gap-5">
         <h2 className="text-center xl:text-left text-2xl md:text-2xl xl:text-3xl font-bold">Usługi</h2>
 
-        <div className="flex gap-5 justify-between flex-wrap lg:flex-nowrap">
+        <div className="flex gap-5 justify-center items-center flex-col lg:flex-row lg:justify-between flex-wrap lg:flex-nowrap">
           {servicesData.map((service) => (
             <ServicesList key={service.label} label={service.label} icon={service.icon} services={service.services} />
           ))}
